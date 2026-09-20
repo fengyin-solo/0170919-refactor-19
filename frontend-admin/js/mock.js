@@ -77,19 +77,8 @@
     // 检查是否已登录
     isLoggedIn: function () {
       return this.getCurrentUser() !== null;
-    },
-
-    // 检查登录状态，未登录则跳转到登录页
-    checkAuth: function () {
-      if (!this.isLoggedIn()) {
-        var currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        if (currentPage !== 'login.html') {
-          window.location.href = 'login.html';
-          return false;
-        }
-      }
-      return true;
     }
+    // 未登录跳转规则统一收敛在 js/common.js 的登录守卫中，不在数据层重复实现
   };
 
   // 初始化默认用户

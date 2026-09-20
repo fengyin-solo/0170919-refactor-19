@@ -134,15 +134,12 @@
   </div>
 
   <script src="js/mock.js"></script>
+  <script src="js/common.js"></script>
   <script>
 (function () {
   'use strict';
 
-  // 如果已登录，直接跳转到首页
-  if (AuthModule.isLoggedIn()) {
-    window.location.href = 'index.html';
-    return;
-  }
+  // 已登录访问登录页由 js/common.js 统一跳转首页，此处只处理登录交互
 
   var form = document.getElementById('loginForm');
   var usernameInput = document.getElementById('username');

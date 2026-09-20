@@ -20,26 +20,9 @@
   </style>
 </head>
 <body class="bg-canvas text-slate-600 font-sans antialiased min-h-screen selection:bg-emerald-900 selection:text-white">
+  <!-- 侧边栏与顶栏由 js/common.js 统一渲染（登录守卫、侧边栏与顶栏） -->
   <div id="app" class="flex min-h-screen">
-    <aside class="app-sidebar">
-      <div class="sidebar-logo">
-        <div class="sidebar-logo-icon flex items-center justify-center">
-          <span class="iconify" data-icon="lucide:book-open" data-width="20" data-height="20"></span>
-        </div>
-        <span class="sidebar-logo-text">知识配置平台</span>
-      </div>
-      <nav class="sidebar-nav">
-        <a href="index.html" class="nav-item router-active"><span class="iconify nav-item-icon" data-icon="lucide:layout-dashboard" data-width="18" data-height="18"></span>概览</a>
-        <a href="merchant.html" class="nav-item"><span class="iconify nav-item-icon" data-icon="lucide:store" data-width="18" data-height="18"></span>商家知识</a>
-        <a href="merchant-set.html" class="nav-item"><span class="iconify nav-item-icon" data-icon="lucide:layers" data-width="18" data-height="18"></span>商家集合知识</a>
-        <a href="industry.html" class="nav-item"><span class="iconify nav-item-icon" data-icon="lucide:briefcase" data-width="18" data-height="18"></span>行业知识</a>
-        <a href="global.html" class="nav-item"><span class="iconify nav-item-icon" data-icon="lucide:globe" data-width="18" data-height="18"></span>通用知识</a>
-      </nav>
-    </aside>
     <main class="flex-1 flex flex-col min-w-0">
-      <header class="app-header border-b border-slate-200">
-        <span class="app-header-title text-slate-700 font-medium">知识配置平台</span>
-      </header>
       <div class="flex-1 p-6 md:p-8 space-y-8">
         <div>
           <h2 class="section-title tracking-tight text-slate-900 mb-2">概览</h2>
