@@ -77,18 +77,6 @@
     // 检查是否已登录
     isLoggedIn: function () {
       return this.getCurrentUser() !== null;
-    },
-
-    // 检查登录状态，未登录则跳转到登录页
-    checkAuth: function () {
-      if (!this.isLoggedIn()) {
-        var currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        if (currentPage !== 'login.html') {
-          window.location.href = 'login.html';
-          return false;
-        }
-      }
-      return true;
     }
   };
 
